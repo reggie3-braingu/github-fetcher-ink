@@ -1,4 +1,57 @@
-export interface GithubPackage {
+export declare type ListedItem = {
+    label: string;
+    value: number | string;
+};
+export interface GithubTree {
+    sha: string;
+    url: string;
+    tree: Tree[];
+    truncated: boolean;
+}
+export interface Tree {
+    path: string;
+    mode: string;
+    type: Type;
+    sha: string;
+    size?: number;
+    url: string;
+}
+export declare enum Type {
+    Blob = "blob",
+    Tree = "tree"
+}
+export interface GithubTag {
+    name: string;
+    commit: Commit;
+    zipballURL: string;
+    tarballURL: string;
+    nodeID: string;
+}
+export interface Commit {
+    sha: string;
+    url: string;
+}
+export interface GithubBranch {
+    name: string;
+    commit: Commit;
+    protected: boolean;
+    protection: Protection;
+    protectionURL: string;
+}
+export interface Commit {
+    sha: string;
+    url: string;
+}
+export interface Protection {
+    enabled: boolean;
+    requiredStatusChecks: RequiredStatusChecks;
+}
+export interface RequiredStatusChecks {
+    enforcementLevel: string;
+    contexts: any[];
+    checks: any[];
+}
+export interface GithubRepo {
     id: number;
     nodeID: string;
     name?: string;

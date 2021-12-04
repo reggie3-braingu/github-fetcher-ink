@@ -15,6 +15,12 @@ function Login({ setOctokit, setUserName }: LoginProps): ReactElement {
 	const [localUserName, setLocalName] = useState<string>("");
 
 	useEffect(() => {
+		setTimeout(
+			() => setAuthToken(`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`),
+			1000
+		);
+	}, []);
+	useEffect(() => {
 		if (authToken) {
 			setIsLoading(true);
 			const octokit = new Octokit({

@@ -1,0 +1,274 @@
+[
+    {
+        "name": "Carrie_Maps",
+        "commit": {
+            "sha": "48863d65d23d2df4a60a788ef51eabbb314d6e9c",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/48863d65d23d2df4a60a788ef51eabbb314d6e9c"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/Carrie_Maps/protection"
+    },
+    {
+        "name": "common-map",
+        "commit": {
+            "sha": "5485dcc82295eca1e938bfabe1f4222f5b05b9cb",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/5485dcc82295eca1e938bfabe1f4222f5b05b9cb"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/common-map/protection"
+    },
+    {
+        "name": "common-map-bullseye",
+        "commit": {
+            "sha": "6c71ed255bfe23bde1cd5ce5b578d9067ef5a903",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/6c71ed255bfe23bde1cd5ce5b578d9067ef5a903"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/common-map-bullseye/protection"
+    },
+    {
+        "name": "common-map-bullseye-2",
+        "commit": {
+            "sha": "5dcbf782600052730dbd7191ca4d03c3a26377df",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/5dcbf782600052730dbd7191ca4d03c3a26377df"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/common-map-bullseye-2/protection"
+    },
+    {
+        "name": "cypress-test",
+        "commit": {
+            "sha": "946114fe0e59fb3151eed188e58c6d25f81dcad7",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/946114fe0e59fb3151eed188e58c6d25f81dcad7"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/cypress-test/protection"
+    },
+    {
+        "name": "dafif-helipads",
+        "commit": {
+            "sha": "48a0f59c6f8a0e6f06e5904fa1106ddafc434577",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/48a0f59c6f8a0e6f06e5904fa1106ddafc434577"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/dafif-helipads/protection"
+    },
+    {
+        "name": "jason-dafif-waypoints",
+        "commit": {
+            "sha": "b6972ba7a8ab5ffa4d05bc3fe223c8dccf7facc3",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/b6972ba7a8ab5ffa4d05bc3fe223c8dccf7facc3"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/jason-dafif-waypoints/protection"
+    },
+    {
+        "name": "maps-add-side-bar",
+        "commit": {
+            "sha": "5d18593f1c8dbd8408d054688173c403840d144c",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/5d18593f1c8dbd8408d054688173c403840d144c"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/maps-add-side-bar/protection"
+    },
+    {
+        "name": "maps-experimental-refactor",
+        "commit": {
+            "sha": "3e9f38da6f1b3411ba8dfd8f9601d6e9293e5aca",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/3e9f38da6f1b3411ba8dfd8f9601d6e9293e5aca"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/maps-experimental-refactor/protection"
+    },
+    {
+        "name": "master",
+        "commit": {
+            "sha": "2e35d96107dc35ce297ab80b4ee536390b47bcb7",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/2e35d96107dc35ce297ab80b4ee536390b47bcb7"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/master/protection"
+    },
+    {
+        "name": "reggie3-braingu/issue16",
+        "commit": {
+            "sha": "6da3bb0f098f63aee6035b68ea9d1e1b277eb697",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/6da3bb0f098f63aee6035b68ea9d1e1b277eb697"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/reggie3-braingu/issue16/protection"
+    },
+    {
+        "name": "reggie3-braingu/issue17",
+        "commit": {
+            "sha": "fefcc173929dc1e06ad0aa5f916749856cddf34e",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/fefcc173929dc1e06ad0aa5f916749856cddf34e"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/reggie3-braingu/issue17/protection"
+    },
+    {
+        "name": "reggie3-braingu/issue23",
+        "commit": {
+            "sha": "a3624d9c0d19553fd32056ecbc2fb9c731113ac6",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/a3624d9c0d19553fd32056ecbc2fb9c731113ac6"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/reggie3-braingu/issue23/protection"
+    },
+    {
+        "name": "rtk-query",
+        "commit": {
+            "sha": "48863d65d23d2df4a60a788ef51eabbb314d6e9c",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/48863d65d23d2df4a60a788ef51eabbb314d6e9c"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/rtk-query/protection"
+    },
+    {
+        "name": "starter",
+        "commit": {
+            "sha": "27e1c2f02118ece7712884794690bb2043b4aa8a",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/27e1c2f02118ece7712884794690bb2043b4aa8a"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/starter/protection"
+    },
+    {
+        "name": "update-common-map",
+        "commit": {
+            "sha": "254fd0494d1ff4fb78346906afab93b4e54ac438",
+            "url": "https://api.github.com/repos/braingu/mission-react/commits/254fd0494d1ff4fb78346906afab93b4e54ac438"
+        },
+        "protected": false,
+        "protection": {
+            "enabled": false,
+            "required_status_checks": {
+                "enforcement_level": "off",
+                "contexts": [],
+                "checks": []
+            }
+        },
+        "protection_url": "https://api.github.com/repos/braingu/mission-react/branches/update-common-map/protection"
+    }
+]

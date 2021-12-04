@@ -25,23 +25,47 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importStar(require("react"));
 const Login_1 = __importDefault(require("./components/Login/Login"));
 const ink_1 = require("ink");
-const PackageList_1 = __importDefault(require("./components/PackageList/PackageList"));
+const RepoList_1 = __importDefault(require("./components/RepoList/RepoList"));
+const useGetBranches_1 = __importDefault(require("./hooks/useGetBranches"));
+const useGetTags_1 = __importDefault(require("./hooks/useGetTags"));
+const BranchAndTagList_1 = __importDefault(require("./components/BranchAndTagList/BranchAndTagList"));
+const useGetGitTree_1 = __importDefault(require("./hooks/useGetGitTree"));
 // Create a personal access token at https://github.com/settings/tokens/new?scopes=repo
 const App = ({ packageName }) => {
     const [userName, setUserName] = (0, react_1.useState)("");
     const [octokit, setOctokit] = (0, react_1.useState)(null);
     const [isLoggedIn, setIsLoggedIn] = (0, react_1.useState)(false);
+    const [selectedRepo, setSelectedRepo] = (0, react_1.useState)();
+    const { branches } = (0, useGetBranches_1.default)({ octokit, repo: selectedRepo });
+    const { tags } = (0, useGetTags_1.default)({ octokit, repo: selectedRepo });
+    const [selectedCommitSha, setSelectedCommitSha] = (0, react_1.useState)("");
+    const { tree: githubTree } = (0, useGetGitTree_1.default)({
+        commitSha: selectedCommitSha,
+        octokit: octokit,
+        repoName: selectedRepo === null || selectedRepo === void 0 ? void 0 : selectedRepo.name,
+        repoOwner: selectedRepo === null || selectedRepo === void 0 ? void 0 : selectedRepo.owner.login,
+    });
     (0, react_1.useEffect)(() => {
         if (userName && octokit && !isLoggedIn) {
             setIsLoggedIn(true);
         }
     }, [userName, octokit, isLoggedIn]);
+    const onRepoSelected = (repo) => {
+        setSelectedRepo(repo);
+    };
+    const onBranchOrTagSelected = ({ branch, tag, }) => {
+        console.log(branch !== null && branch !== void 0 ? branch : tag);
+        if (branch || tag) {
+            setSelectedCommitSha((branch || tag).commit.sha);
+        }
+    };
     return (react_1.default.createElement(ink_1.Box, { display: "flex", flexDirection: "column" },
-        !userName && react_1.default.createElement(Login_1.default, { setUserName: setUserName, setOctokit: setOctokit }),
+        !isLoggedIn && (react_1.default.createElement(Login_1.default, { setUserName: setUserName, setOctokit: setOctokit })),
         !!userName && (react_1.default.createElement(ink_1.Text, null,
             "Hello, ",
             react_1.default.createElement(ink_1.Text, { color: "green" }, userName))),
-        !!isLoggedIn && react_1.default.createElement(PackageList_1.default, { octokit: octokit })));
+        !!isLoggedIn && (react_1.default.createElement(RepoList_1.default, { octokit: octokit, onRepoSelected: onRepoSelected })),
+        !!isLoggedIn && (!!branches.length || !!tags.length) && !githubTree && (react_1.default.createElement(BranchAndTagList_1.default, { octokit: octokit, branches: branches, tags: tags, onBranchOrTagSelected: onBranchOrTagSelected }))));
 };
 module.exports = App;
 exports.default = App;

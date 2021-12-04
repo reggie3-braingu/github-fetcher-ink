@@ -29,6 +29,9 @@ function Login({ setOctokit, setUserName }) {
     const [authToken, setAuthToken] = (0, react_1.useState)("");
     const [localUserName, setLocalName] = (0, react_1.useState)("");
     (0, react_1.useEffect)(() => {
+        setTimeout(() => setAuthToken(`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`), 1000);
+    }, []);
+    (0, react_1.useEffect)(() => {
         if (authToken) {
             setIsLoading(true);
             const octokit = new octokit_1.Octokit({

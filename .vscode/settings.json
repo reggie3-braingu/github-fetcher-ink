@@ -1,35 +1,36 @@
 {
-  "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#ffea00",
-    "titleBar.activeForeground": "#000000"
-  },
-  "cSpell.words": [
-    "acft",
-    "ampm",
-    "beno",
-    "browserslist",
-    "cnfrm",
-    "COMMVERSIONS",
-    "dailyschedulesview",
-    "Deconflict",
-    "fontawesome",
-    "gucifer",
-    "ipoe",
-    "mattermmost",
-    "prelint",
-    "respawn",
-    "testid"
-  ],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "eslint.options": { "configFile": "./.eslintrc.json" },
-  "todohighlight.keywords": [
-    {
-      "text": "NOTE:",
-      "color": "#000000",
-      "backgroundColor": "orange",
-      "overviewRulerColor": "grey"
-    }
-  ]
+	"workbench.colorCustomizations": {
+		"titleBar.activeBackground": "#ffea00",
+		"titleBar.activeForeground": "#000000"
+	},
+	"cSpell.words": [
+		"acft",
+		"ampm",
+		"beno",
+		"browserslist",
+		"cnfrm",
+		"COMMVERSIONS",
+		"dailyschedulesview",
+		"Deconflict",
+		"fontawesome",
+		"gucifer",
+		"ipoe",
+		"mattermmost",
+		"prelint",
+		"respawn",
+		"testid",
+		"zipball"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"eslint.options": { "configFile": "./.eslintrc.json" },
+	"todohighlight.keywords": [
+		{
+			"text": "NOTE:",
+			"color": "#000000",
+			"backgroundColor": "orange",
+			"overviewRulerColor": "grey"
+		}
+	]
 }
