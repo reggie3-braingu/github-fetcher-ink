@@ -1,22 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Octokit } from "octokit";
 import Login from "./components/Login/Login";
-import { Box } from "ink";
-import Header from "./components/Header/Header";
+import { Box, Text } from "ink";
+import _Header from "./components/Header/Header";
+import PackageList from "./components/PackageList/PackageList";
 
 // Create a personal access token at https://github.com/settings/tokens/new?scopes=repo
-const octokit = new Octokit({
-	auth: `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`,
-	userAgent: "github-fetcher/v0.0.1",
-});
 
 const App = ({ packageName }: { packageName?: string }) => {
-	console.log("packageName", packageName);
+	const [userName, setUserName] = useState<string>("");
+	const [octokit, setOctokit] = useState<Octokit | null>(null);
+	const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+
+	useEffect(() => {
+		if (userName && octokit && !isLoggedIn) {
+			setIsLoggedIn(true);
+		}
+	}, [userName, octokit, isLoggedIn]);
 
 	return (
-		<Box margin={2}>
-			<Header />
-			<Login octokit={octokit} />
+		<Box display="flex" flexDirection="column">
+			{/* <Header /> */}
+			{!isLoggedIn && (
+				<Login setUserName={setUserName} setOctokit={setOctokit} />
+			)}
+			{!!userName && (
+				<Text>
+					Hello, <Text color="green">{userName}</Text>
+				</Text>
+			)}
+			{!!isLoggedIn && <PackageList octokit={octokit} />}
 		</Box>
 	);
 };

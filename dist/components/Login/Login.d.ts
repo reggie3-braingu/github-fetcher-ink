@@ -1,7 +1,8 @@
 import { Octokit } from "octokit";
 import { ReactElement } from "react";
-interface Props {
-    octokit: Octokit;
+interface LoginProps {
+    setOctokit: (octokit: Octokit) => void;
+    setUserName: (userName: string) => void;
 }
-declare function Login({ octokit }: Props): ReactElement;
+declare function Login({ setOctokit, setUserName }: LoginProps): ReactElement;
 export default Login;

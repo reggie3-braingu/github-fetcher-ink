@@ -5,7 +5,7 @@ import BigText from "ink-big-text";
 const Header = () => {
 	return (
 		<Gradient name="rainbow">
-			<BigText text="unicorns" />
+			<BigText text="Github Package Fetcher" />
 		</Gradient>
 	);
 };

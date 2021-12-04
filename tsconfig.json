@@ -4,7 +4,9 @@
 		"module": "commonjs",
 		"jsx": "react",
 		"esModuleInterop": true,
-		"outDir": "dist"
+		"outDir": "dist",
+		"noUnusedLocals": false /* Report errors on unused locals. */,
+		"noUnusedParameters": false /* Report errors on unused parameters. */
 	},
 	"include": ["source"]
 }
